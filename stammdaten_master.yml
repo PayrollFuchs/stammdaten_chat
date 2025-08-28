@@ -1,0 +1,40 @@
+allowed_fields:
+  - "vorname"
+  - "nachname" 
+  - "email"
+  - "telefon"
+  - "adresse_strasse"
+  - "adresse_hausnummer"
+  - "adresse_plz"
+  - "adresse_stadt"
+  - "adresse_land"
+  - "abteilung"
+  - "position"
+
+restricted_fields:
+  - "personalnummer"
+  - "gehalt"
+  - "eintrittsdatum"
+  - "austrittsdatum"
+
+validation_rules:
+  email: "muss @ enthalten"
+  telefon: "nur Zahlen und + - / ( ) Leerzeichen"
+  adresse_plz_deutschland: "wenn Land = Deutschland, dann 5 Ziffern"
+  adresse_plz_international: "wenn Land != Deutschland, dann beliebiges Format"
+  
+address_components:
+  - "adresse_strasse"
+  - "adresse_hausnummer" 
+  - "adresse_plz"
+  - "adresse_stadt"
+  - "adresse_land"
+
+conditional_validation:
+  adresse_plz:
+    if_country: "Deutschland"
+    then: "^[0-9]{5}$"
+    else: ".*"
+
+change_confirmation_required: true
+log_all_changes: true

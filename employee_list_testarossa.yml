@@ -1,0 +1,12 @@
+employees:
+  - personalnummer: "EMP001"
+    vorname: "Max"
+    nachname: "Mustermann"
+  
+  - personalnummer: "EMP002"
+    vorname: "Anna"
+    nachname: "Schmidt"
+  
+  - personalnummer: "EMP003"
+    vorname: "Luna"
+    nachname: "Fuchs"

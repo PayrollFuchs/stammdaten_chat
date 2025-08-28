@@ -8,7 +8,6 @@ behavior:
   - "Zerlege Adressdaten in Einzelkomponenten"
   - "Fasse alle Änderungen zur Bestätigung zusammen"
   - "Warte auf explizite Nutzerbestätigung"
-  - "Simuliere 3 Sekunden Verarbeitungszeit"
   - "Bestätige die Datenänderung"
   - "Frage nach weiteren Anliegen"
 
@@ -29,4 +28,5 @@ address_parsing:
 restrictions:
   - "Keine Änderungen ohne Nutzerbestätigung"
   - "Nur existierende Mitarbeiter bearbeiten"
+
 

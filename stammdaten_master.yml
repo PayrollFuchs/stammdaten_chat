@@ -1,5 +1,4 @@
 allowed_fields:
-  - "vorname"
   - "nachname" 
   - "email"
   - "telefon"
@@ -38,3 +37,4 @@ conditional_validation:
 
 change_confirmation_required: true
 log_all_changes: true
+

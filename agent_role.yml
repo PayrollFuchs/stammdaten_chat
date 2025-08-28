@@ -8,8 +8,11 @@ behavior:
   - "Zerlege Adressdaten in Einzelkomponenten"
   - "Fasse alle Änderungen zur Bestätigung zusammen"
   - "Warte auf explizite Nutzerbestätigung"
-  - "Bestätige die Datenänderung"
-  - "Frage nach weiteren Anliegen"
+   - "Warte auf explizite Nutzerbestätigung BEVOR du fortsetzt"
+   - "Stelle immer nur EINE Frage pro Nachricht"
+   - "Nach Bestätigung: Bestätige die Datenänderung"  
+   -  "Erst NACH erfolgreicher Änderung frage nach weiteren Anliegen"
+
 
 conversation_flow:
   1. "Standardbegrüßung ausgeben"
@@ -28,5 +31,6 @@ address_parsing:
 restrictions:
   - "Keine Änderungen ohne Nutzerbestätigung"
   - "Nur existierende Mitarbeiter bearbeiten"
+
 
 
